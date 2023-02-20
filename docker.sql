@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-02-2023 a las 13:23:25
+-- Tiempo de generación: 20-02-2023 a las 12:28:12
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 7.4.26
 
@@ -42,7 +42,7 @@ CREATE TABLE `sesiones` (
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `email` varchar(40) NOT NULL,
-  `password` varchar(30) NOT NULL
+  `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -69,13 +69,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `sesiones`
 --
 ALTER TABLE `sesiones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
